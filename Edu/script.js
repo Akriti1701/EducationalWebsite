@@ -1,26 +1,33 @@
-// /* ------------- scroll section active link -----------------*/
-// let sections = document.querySelectorAll("section");
-// let navLinks = document.querySelectorAll("header nav a");
-// window.onscroll = () => {
-//   sections.forEach((sec) => {
-//     let top = window.scrollY;
-//     let offset = sec.offsetTop - 150;
-//     let height = sec.offsetHeight;
-//     let id = sec.getAttribute("id");
-
-//     if (top >= offset && top < offset + height) {
-//       navLinks.forEach.apply((links) => {
-//         links.classList.remove("active");
-//         document
-//           .querySelector('header nav a[href"=' + id + "]")
-//           .classList.add("active");
-//       });
-//     }
-//   });
-// };
-
 let loginForm = document.querySelector(".login-form");
 
 document.querySelector("#login-btn").onclick = () => {
   loginForm.classList.toggle("active");
 };
+
+// Initialize Swiper
+
+let swiperCards = new Swiper(".card__content", {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+    },
+    968: {
+      slidesPerView: 3,
+    },
+  },
+});

@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PadhleAkshay</title>
+
+    <!-- Remixicon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Font awesome cdn link -->
     <link
       rel="stylesheet"
@@ -15,6 +25,12 @@
 
     <!-- Link to favicon -->
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Custom css file -->
     <link rel="stylesheet" href="style.css" />
@@ -259,7 +275,123 @@
 
     <!-- Courses section ends here -->
 
-    <!-- Custom js file -->
+    <!-- Review section starts here -->
+
+    <section class="review" id="review">
+      <h1 class="heading">Student's Review</h1>
+      <p class="testimonial">Testimonies from our growing community!</p>
+      <div class="card__container swiper">
+        <div class="card__content">
+          <div class="swiper-wrapper">
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="rev1.png" alt="image" class="card__img" />
+                <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data">
+                <h3 class="card__name">Alice Flores</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore error enim similique itaque amet excepturi quaerat
+                  autem possimus nemo doloremque.
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="rev2.png" alt="image" class="card__img" />
+                <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data">
+                <h3 class="card__name">Shane Evans</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore error enim similique itaque amet excepturi quaerat
+                  autem possimus nemo doloremque.
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="rev3.png" alt="image" class="card__img" />
+                <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data">
+                <h3 class="card__name">Peter Butler</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore error enim similique itaque amet excepturi quaerat
+                  autem possimus nemo doloremque.
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="rev4.png" alt="image" class="card__img" />
+                <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data">
+                <h3 class="card__name">Neha Sharma</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore error enim similique itaque amet excepturi quaerat
+                  autem possimus nemo doloremque.
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="rev5.png" alt="image" class="card__img" />
+                <div class="card__shadow"></div>
+              </div>
+
+              <div class="card__data">
+                <h3 class="card__name">Michael Scott</h3>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore error enim similique itaque amet excepturi quaerat
+                  autem possimus nemo doloremque.
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Review section ends here -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main js file -->
     <script src="script.js"></script>
   </body>
 </html>
