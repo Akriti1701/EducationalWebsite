@@ -95,7 +95,7 @@ html {
 }
 
 .header .logo img {
-  width: 130px;
+  width: 47px;
   height: 43px;
   /*border-radius: 50%; */
   padding-right: 0.5rem;
@@ -483,6 +483,8 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  /* padding-top: 0.1rem; */
   /* padding-bottom: 1.5rem; */
   /* padding-top: 1.5rem;
   padding-bottom: 1.75rem; */
@@ -653,6 +655,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   background: var(--bgclr);
+  /* padding-top: 0%; */
 }
 
 .contact .content {
@@ -661,6 +664,7 @@ h3 {
 }
 
 .contact .content p {
+  font-size: 14px;
   font-weight: 300;
   color: var(--white);
 }
@@ -697,7 +701,6 @@ h3 {
 }
 .container .contactInfo .box .text {
   display: flex;
-  /* margin-left: 20px; */
   font-size: 16px;
   color: var(--white);
   flex-direction: column;
@@ -705,8 +708,15 @@ h3 {
 }
 
 .container .contactInfo .box .text h3 {
+  padding: 1%;
+  margin-left: 1rem;
   font-weight: 500;
   color: var(--primary-color);
+}
+
+.container .contactInfo .box .text p {
+  margin-left: 1rem;
+  font-size: 13px;
 }
 
 .contactForm {

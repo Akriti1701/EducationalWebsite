@@ -31,3 +31,20 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactLink = document.querySelector('a[href="#contact"]');
+
+  contactLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Get the offset top position of the contact section
+    const contactSection = document.getElementById("contact");
+    const offsetTop = contactSection.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  });
+});
