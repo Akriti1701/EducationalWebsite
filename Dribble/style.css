@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@500;600&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+}
+
+/* :root {
+  --bg-color: #191f36;
+  --snd-bg-color: #262b40;
+  --text-color: #fff;
+  --main-color: #59b2f4;
+} */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+}
+
+.picture {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+.picture img {
+  height: 110vh;
+  width: 92%;
+}
+
+.form-container {
+  /* position: ; */
+  align-items: center;
+  justify-content: center;
+  width: 58vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .signupForm .heading {
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
