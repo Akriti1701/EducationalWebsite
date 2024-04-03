@@ -13,13 +13,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-/* :root {
-  --bg-color: #191f36;
-  --snd-bg-color: #262b40;
-  --text-color: #fff;
-  --main-color: #59b2f4;
-} */
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -44,10 +37,12 @@ html {
 
 .form-container {
   /* position: ; */
+
   align-items: center;
   justify-content: center;
   width: 58vw;
-  padding: 40px;
+  padding-left: 18rem;
+  padding-right: 18rem;
   display: flex;
   flex-direction: column;
 }
@@ -58,4 +53,59 @@ html {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+}
+
+.form-container .signupForm .warn {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  color: red;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.detail {
+  width: 48%;
+  margin-bottom: 1.5rem;
+}
+
+.detail.full-width {
+  width: 100%; /* Changed to 100% */
+}
+
+.label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold; /* Added font-weight */
+  margin-bottom: 0.5rem;
+}
+
+.textinput {
+  width: calc(100% - 3rem); /* Changed to take padding into account */
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: rgb(238, 238, 238);
+  margin-bottom: 0.7rem;
+  border-radius: 1rem;
+  height: 40px;
+}
+
+/* Adjustments for Email and Password */
+.detail.email,
+.detail.password {
+  width: 100%;
+}
+
+.form-container .signupForm .agreement {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.68rem;
+  overflow: hidden;
+}
+.form-container .signupForm .agreement .tick {
+  zoom: 2;
+  padding: 1rem;
 }

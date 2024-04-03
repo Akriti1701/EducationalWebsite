@@ -16,14 +16,51 @@
         <form action="" class="signupForm">
           <h1 class="heading">Sign up to Dribble</h1>
           <p class="warn">• Username has already been taken</p>
-          <h3 class="detail">Name</h3>
-          <input class="textinput" type="text" placeholder="Enter Your name" />
-
-          <h3 class="detail">Name</h3>
-          <input class="textinput" type="text" placeholder="Enter Your name" />
-
-          <h3 class="detail">Name</h3>
-          <input class="textinput" type="text" placeholder="Enter Your name" />
+          <div class="input-group">
+            <div class="detail">
+              <h3 class="label">Name</h3>
+              <input
+                class="textinput"
+                type="text"
+                placeholder="Enter Your name"
+              />
+            </div>
+            <div class="detail">
+              <h3 class="label">Username</h3>
+              <input
+                class="textinput"
+                type="text"
+                placeholder="Should be Unique"
+              />
+            </div>
+          </div>
+          <div class="detail email">
+            <h3 class="label">Email</h3>
+            <input
+              class="textinput"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <div class="detail password">
+            <h3 class="label">Password</h3>
+            <input
+              class="textinput"
+              type="password"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <div class="agreement">
+            <input class="tick" type="checkbox" id="terms" />
+            <label for="terms"
+              >Creating an account means your're okay with our
+              <a href="#">Terms of Services, Privacy Policy</a>, and out default
+              <a href="#">Notification Settings</a>.</label
+            >
+          </div>
+          <div class="click">
+            <button class="btn">Create Account</button>
+          </div>
         </form>
       </div>
     </div>
